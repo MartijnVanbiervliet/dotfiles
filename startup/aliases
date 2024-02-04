@@ -1,0 +1,9 @@
+# Shorthands for common commands
+alias wgit=git.exe
+alias git=/usr/bin/git
+alias ll="ls -alF"
+alias t="tmux a || tmux"
+alias dl="~/dockerlogin.sh"
+alias lg="lazygit"
+alias v="nvim"
+alias ov="cd ~/obsidian-vault"
