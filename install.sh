@@ -24,9 +24,14 @@ fi
 echo >>$SH
 echo "Installing in $SH..."
 
-# Tmux conf
+## Tmux conf
 if ask "Do you want to install .tmux.conf?"; then
 	ln -s "$(realpath ".tmux.conf")" ~/.tmux.conf || true
+fi
+
+# NeoVim conf
+if ask "Do you want to install the NeoVim config?"; then
+	ln -s "$(realpath "nvim")" ~/.config/nvim || true
 fi
 
 echo "Do you want $SH to source: "
