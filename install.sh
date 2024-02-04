@@ -36,7 +36,6 @@ fi
 
 echo "Do you want $SH to source: "
 for file in startup/*; do
-	echo $file
 	if [ -f "$file" ]; then
 		filename=$(basename "$file")
 		if ask "${filename}?"; then
