@@ -6,5 +6,4 @@ Run `install.sh` to install the dotfiles in a new Linux environment.
 [mischavandenburg](https://github.com/mischavandenburg/dotfiles/tree/main)
 [bartekspitza](https://github.com/bartekspitza/dotfiles)
 [ThePrimeagen](https://github.com/ThePrimeagen)
-
- 
+[omerxx](https://github.com/omerxx/dotfiles/tree/master)
