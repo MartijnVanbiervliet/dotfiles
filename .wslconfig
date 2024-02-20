@@ -1,0 +1,11 @@
+[experimental]
+# https://learn.microsoft.com/en-us/windows/wsl/wsl-config#experimental-settings
+
+# Automatically releases cached memory after detecting idle CPU usage. Set to gradual for slow release, and dropcache for instant release of cached memory.
+# https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/#automatic-memory-reclaim
+autoMemoryReclaim=gradual
+
+# When set to true, any newly created VHD will be set to sparse automatically.
+# https://devblogs.microsoft.com/commandline/windows-subsystem-for-linux-september-2023-update/#automatic-disk-space-clean-up-set-sparse-vhd
+# wsl --manage <distro> --set-sparse <true/false> command to allow you to set your existing distros to be sparse or not if you’d like.
+sparseVhd=true
