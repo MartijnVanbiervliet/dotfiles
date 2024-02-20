@@ -7,3 +7,6 @@ alias dl="~/dockerlogin.sh"
 alias lg="lazygit"
 alias v="nvim"
 alias ov="cd ~/obsidian-vault"
+
+alias gb="git branch --sort=-committerdate --column"
+
