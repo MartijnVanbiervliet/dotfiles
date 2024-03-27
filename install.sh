@@ -29,6 +29,11 @@ if ask "Do you want to install .tmux.conf?"; then
 	ln -s "$(realpath ".tmux.conf")" ~/.tmux.conf || true
 fi
 
+## Starship conf
+if ask "Do you want to install starship.toml?"; then
+	ln -s "$(realpath "starship.toml")" ~/.config/starship.toml || true
+fi
+
 # NeoVim conf
 if ask "Do you want to install the NeoVim config?"; then
 	ln -s "$(realpath "nvim")" ~/.config/nvim || true
