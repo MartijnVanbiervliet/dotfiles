@@ -34,6 +34,12 @@ if ask "Do you want to install starship.toml?"; then
 	ln -s "$(realpath "starship.toml")" ~/.config/starship.toml || true
 fi
 
+## Alacritty conf
+if ask "Do you want to install alacritty.toml?"; then
+	mkdir -p ~/.config/alacritty
+	ln -s "$(realpath "starship.toml")" ~/.config/alacritty/alacritty.toml || true
+fi
+
 # NeoVim conf
 if ask "Do you want to install the NeoVim config?"; then
 	ln -s "$(realpath "nvim")" ~/.config/nvim || true
