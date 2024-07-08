@@ -45,6 +45,11 @@ if ask "Do you want to install the NeoVim config?"; then
 	ln -s "$(realpath "nvim")" ~/.config/nvim || true
 fi
 
+# Change writeable directory color to yellow
+if ask "Do you want to install the NeoVim config?"; then
+	echo LS_COLORS+=':ow=01;33' >>"$SH"
+fi
+
 echo "Do you want $SH to source: "
 for file in startup/*; do
 	if [ -f "$file" ]; then
