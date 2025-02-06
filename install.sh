@@ -46,7 +46,7 @@ if ask "Do you want to install the NeoVim config?"; then
 fi
 
 # Change writeable directory color to yellow
-if ask "Do you want to install the NeoVim config?"; then
+if ask "Do you want to update the color of directories in ls to yellow?"; then
 	echo LS_COLORS+=':ow=01;33' >>"$SH"
 fi
 
